@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Francis' Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* style sa header */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #778899;
+  color: white;
+}
+
+/* dako si h1 */
+.header h1 {
+  font-size: 40px;
+}
+
+/* navbar design */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* navbar design.2 */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* hover design */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* column */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* adjust layout sa gamay nga screen */
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* adjust sa layout sa gamay nga screen.2 */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width:100%;
+  }
+}
+  li{
+  margin: 10px 0;
+}
+</style>
+</head>
+<body>
+
+<!-- <div style="background:yellow;padding:5px">
+  <h4 style="text-align:center">Resize the browser window to see the responsive effect.</h4>
+</div> -->
+
+<div class="header">
+  <h1>About Me</h1>
+</div>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="AboutMe.html">About Me</a>
+  <a href="port.html" target="_blank">Portfolio</a>
+  <a href="gal.html" target="_blank">Gallery</a>
+  <a href="ContactMe.html" target="_blank">Contact Me</a>
+</div>
+
+<!-- left side -->
+<div class="row">
+  <div class="side">
+    <h2>Photo of me:</h2>
+    <img src="pfp.jpg" style="height: 450px;">
+    <p>I am an IT freshman from Bukidnon State University. Currently residing in Malaybalay City, Bukidnon.</p>
+  </div>
+
+  <!-- right side -->
+  <div class="main">
+    <h2>Additional Information</h2>
+    <p><b>Name:</b> Francis Gil I. Sumagang</p>
+    <p><b>Nickname:</b> Frans, Prans, Cis</p>
+    <p><b>Birthday:</b> November 25 2001</p>
+    <p><b>Age:</b> 19 years old</p>
+    <p><b>Address:</b> Barangay 8, Mampaalong St., Malaybalay City, Bukidnon</p>
+    <br>
+    <h2>Skills and Achievements</h2>
+    <h3><b><i>Skills</i></b></h4>
+    <ul>
+      <li>Profecient in MS Word, Excel, and Powerpoint</li>
+      <li>Photoshop</li>
+      <li>Time Management</li>
+      <li>Critical Thinker</li>
+    </ul>
+    <h3><b><i>Achievements</i></b></h4>
+    <ul>
+      <li>Graduated as a commendable student in JHS</li>
+      <li>Graduated with Honors in SHS</li>
+      <li>2-time BITS Contestant</li>
+    </ul>
+
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Francis' Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Texturina:wght@300&display=swap" rel="stylesheet">
+<style>
+  html {
+    background: url("bg.jpg") no-repeat center fixed;
+    background-size: cover;
+  }
+  /* h1 design */
+  .Welcome {
+    color: #F0FFFF;
+    font-size: 450%;
+    font-family: 'Texturina', serif;
+    text-align: center;
+  }
+  /* welcome design */
+  div#contain{
+ margin:0 auto;
+ border: 1px dashed #000000;
+ width: 1000px;
+ height: 600px;
+  }
+  /* welcome design.2 */
+  div#menu{
+ overflow:hidden;
+ margin-top:50px;
+ border: 1px dashed #FF00FF;
+ text-align:right;
+  }
+  /* list positioning */
+  #menu > li.sub ul {
+    list-style: none;
+    position: absolute;
+    top: -1000em;
+    left: 0px;
+  }
+  /* list positioning.2 */
+  #menu li.sub ul li a {
+    display: inline;
+  }
+  /* list positining.3 */
+  #menu > li.sub:hover ul {
+    top: 3em;
+  }
+  /* text positioning */
+  #menu{
+    text-align:left;
+  }
+  /* list margin */
+  li{
+    display:inline-block;
+    margin-left: 25px;
+  }
+  /* text positioning.2 */
+  .myDivElement {
+    text-align: center;
+  }
+  /* text positioning.3 */
+  .myDivElement ul li {
+    display:inline;
+  }
+  /* list positioning */
+  ul {
+    display: table;
+    margin: 0 auto;
+    text-align: left;
+  }
+  /* break spacing */
+  br {
+    display: block;
+    content: "";
+    margin-top: 500px;
+  }
+  /* ilis color sa link */
+  a {
+    font-size: 200%;
+    text-decoration: none;
+    color: #F0FFFF
+  }
+</style>
+</head>
+
+<body>
+  <footer>
+    <div class="myDivElement">
+      <h1 class=Welcome>Welcome to my website</h1>
+      <br>
+      <ul id="menu">
+       <li class="sub"><a href="index.html">Home</a></li>
+       <li class="sub"><a href="AboutMe.html" target="_blank">About Me</a></li>
+       <li><a href="port.html" target="_blank">Portfolio</a></li>
+       <li><a href="gal.html" target="_blank">Gallery</a></li>
+       <li><a href="ContactMe.html" target="_blank">Contact Me</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
